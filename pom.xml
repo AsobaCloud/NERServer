@@ -20,8 +20,10 @@
 	
 <dependency>
     <groupId>edu.stanford.nlp</groupId>
-    <artifactId>stanford-corenlp</artifactId>
+    <artifactId>stanford-ner</artifactId>
     <version>3.3.0</version>
+     <scope>system</scope>
+     <systemPath>${project.basedir}/stanford-ner.jar</systemPath>
 </dependency>
 
     </dependencies>
