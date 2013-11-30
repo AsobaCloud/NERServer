@@ -25,6 +25,12 @@ public class HelloWorld extends HttpServlet {
         resp.getWriter().print(output);
     }
     
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    	String output =  "Welcome to NERClassifier";
+        resp.getWriter().print(output);
+    }
+    
     private void loadClassifier()
     {
     	
